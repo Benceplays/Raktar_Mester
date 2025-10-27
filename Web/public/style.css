@@ -1,0 +1,16 @@
+body{
+    background-color: #f2f0ef;
+}
+#MainDiv{
+    display: flex;
+}
+.smallDiv{
+    padding: 1%;
+    width:35vw;
+    margin-top: 10%;
+    margin-left: 10%;
+    height: 60vh;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
