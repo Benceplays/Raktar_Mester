@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kezelőfelület</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../img/raktar_mester-removebg.png">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../javascript.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav me-auto">
+        <img src="../img/raktar_mester-removebg.png" alt="Raktar_mester_logo" style="width: 75px; margin-top: -5%;">
+        </div>
+
+        <a class="btn btn-danger" style="margin-right: 1vw;" href="#">Kijelentkezés</a>
+    </div>
+    </nav>
+    <form class="form-inline">
+        <div style="display: flex;">
+            <input class="form-control" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" id="searchButton" type="submit">Search</button>
+            <button id="newItemButton" class="rounded-1 btn btn-primary" onclick="new_item_show()">Új cikk felvétele</button>
+        </div>
+    </form>
+    <div id="operatorDiv">
+        
+    </div>
+    <div id="newItemDiv" style="display: none;">
+        <form>
+            <h3 class="newItems">Új cikk felvétele</h3>
+            <input type="text" class="form-control newItems" placeholder="Cikk megnevezése" required>
+            <input list="category" class="form-control" id="categorySelect"  placeholder="Kezd el gépelni a kategóriát..." required>
+            <datalist id="category">
+                <option value="Home, Office">
+                <option value="Gamer">
+                <option value="IT eszköz">
+                <option value="Programozó eszköz">
+                <option value="Egyéb">
+            </datalist>
+            <input type="number" class="form-control newItems" placeholder="Mennyiség" required>
+            <input type="number" id="newItemId" class="form-control newItems" placeholder="Cikk kódszáma" disabled required>
+            <input type="number" class="form-control newItems" placeholder="Beszerzési ár" required>
+            <input type="number" class="form-control newItems" placeholder="Eladási ár" required>
+            <input type="text" class="form-control newItems" placeholder="Leírás" required>
+            <button type="submit" class="btn btn-success newItems">Mentés</button>
+            <button type="button" class="btn btn-secondary newItems" id="cancelNewItemButton" onclick="new_item_hide()">Mégse</button>
+        </form>
+    </div>
+</body>
+</html>

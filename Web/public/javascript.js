@@ -18,3 +18,9 @@ function login_show() {
         litems[i].style.display = "block";
     }
 }
+function new_item_show() { 
+    document.getElementById("newItemDiv").style.display = "block"; 
+    const randomId = Math.floor(Math.random() * 1000000);
+    document.getElementById("newItemId").value = randomId;/*Később kategória alapján kezdődő sorszám generálás*/
+}
+function new_item_hide() { document.getElementById("newItemDiv").style.display = "none"; }
