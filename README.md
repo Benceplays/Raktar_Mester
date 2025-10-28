@@ -1,4 +1,4 @@
-1.nap 2025.10.27. (HTML, CSS, Bootstrap, Javascript, NodeJS)
+2025.10.27. (HTML, CSS, Bootstrap, Javascript, NodeJS)
 **Registrációs/Bejelentkező design**
 Funkcionalitás nélkül, bejelentkező felület felhasználónév és jelszó megadása lehetséges.
 <img width="1919" height="862" alt="image" src="https://github.com/user-attachments/assets/7eec227a-391e-4c13-9619-9ed3e7bdb99c" />
