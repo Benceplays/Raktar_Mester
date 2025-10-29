@@ -25,3 +25,32 @@ function new_item_show() {
     document.getElementById("newItemId").value = randomId;/*Később kategória alapján kezdődő sorszám generálás*/
 }
 function new_item_hide() { document.getElementById("newItemDiv").style.display = "none"; }
+
+async function addUser() {
+  const response = await fetch('/adduser', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: document.getElementById('regusername').value,
+      email: document.getElementById('regemail').value,
+      password: document.getElementById('regpassword').value,
+    }),
+  });
+
+  const data = await response.json();
+  console.log(data);
+}
+
+async function LoginAttempt() {
+  const response = await fetch('/login', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: document.getElementById('username').value,
+      password: document.getElementById('password').value,
+    }),
+  });
+
+  const data = await response.json();
+  console.log(data);
+}

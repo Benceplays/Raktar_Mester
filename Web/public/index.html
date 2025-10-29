@@ -21,22 +21,20 @@ A Raktár Mester célja, hogy ne csupán egy eszköz legyen a raktárkezeléshez
             <h2 class="login_Items">Üdvözlünk a Raktár Mester alkalmazásban!</h2>
             <h4 class="login_Items" style="margin-top: 5%;">Kérlek jelentkezz be a folytatáshoz:</h4>
             <h4 style="display: none;" class="registration_Items">Nincs még fiókod, itt létrehozhatod:</h4>
-            <form action="/login" method="post">
                 <div class="login_Items">
-                    <input type="text" style="margin-top: 10%;" class="form-control" placeholder="Felhasználónév" id="username" name="username" required>
-                    <input type="password" style="margin-top: 5%;" class="form-control" placeholder="Jelszó" id="password" name="password" required>
+                    <input type="text" style="margin-top: 10%;" class="form-control" placeholder="Felhasználónév" id="username" name="username">
+                    <input type="password" style="margin-top: 5%;" class="form-control" placeholder="Jelszó" id="password" name="password">
                     <button type="submit" style="margin-top: 5%;" class="btn btn-primary">Bejelentkezés</button>
                     <button type="submit" style="margin-top: 5%; color: white;" class="btn btn-info" onclick="registration_show()">Nincs még fiókom</button>
                 </div>
                 <div class="registration_Items" style="display: none;">
-                    <input type="text" style="margin-top: 10%;" class="form-control" placeholder="Felhasználónév" id="username" name="username" required>
-                    <input type="password" style="margin-top: 5%;" class="form-control" placeholder="Jelszó" id="password" name="password" required>
-                    <input type="password" style="margin-top: 5%;" class="form-control" placeholder="Jelszó2" id="password2" name="password2" required>
-                    <input type="email" style="margin-top: 5%;" class="form-control" placeholder="Email" id="email" name="email" required>
-                    <button type="submit" style="margin-top: 5%;" class="btn btn-primary">Regisztráció</button>
+                    <input type="text" style="margin-top: 10%;" class="form-control" placeholder="Felhasználónév" id="regusername" name="username">
+                    <input type="password" style="margin-top: 5%;" class="form-control" placeholder="Jelszó" id="regpassword" name="password">
+                    <input type="password" style="margin-top: 5%;" class="form-control" placeholder="Jelszó2" id="regpassword2" name="password2">
+                    <input type="email" style="margin-top: 5%;" class="form-control" placeholder="Email" id="regemail" name="email">
+                    <button type="submit" style="margin-top: 5%;" class="btn btn-primary" onclick="addUser()">Regisztráció</button>
                     <button type="submit" style="margin-top: 5%; color: white;" class="btn btn-success" onclick="login_show()">Mégis van fiókom</button>
                 </div>
-            </form>
         </div>
     </div>
 </body>
